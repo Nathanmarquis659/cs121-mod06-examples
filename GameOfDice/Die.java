@@ -5,7 +5,7 @@ import java.util.Random;
  *    in game development.
  * @author Luke Hindman
  */
-public class Die implements Rollable, Comparable<Die>{
+public class Die implements Comparable<Die>{
     /* 1. Instance Variables */
     private int faceValue;
     private int numSides;

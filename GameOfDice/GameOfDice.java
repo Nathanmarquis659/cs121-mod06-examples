@@ -9,7 +9,26 @@ public class GameOfDice {
         System.out.println("Welcome to Game of Dice!");
 
         Die die1 = new Die();
+        if ( (die1 instanceof Rollable) == false) {
+            System.out.println("Error: Object is not Rollable");
+            System.exit(1);
+        }
+
         Die die2 = new Die(64);
+        if ( (die2 instanceof Rollable) == false) {
+            System.out.println("Error: Object is not Rollable");
+            System.exit(1);
+        }
+
+        if ( (die1 instanceof Comparable) == false) {
+            System.out.println("Error: Object is not Comparable");
+            System.exit(1);
+        }
+        
+        if ( (die2 instanceof Comparable) == false) {
+            System.out.println("Error: Object is not Comparable");
+            System.exit(1);
+        }
 
         die1.roll();
         die2.roll();

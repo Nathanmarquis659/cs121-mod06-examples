@@ -22,6 +22,9 @@ public class Transactions
 
       System.out.println("Mary's balance after withdrawal: " + acct2.withdraw(480, 1.50));
 
+      acct2.balance = -1000000;
+      System.out.println("Mary's balance after account hack: " + acct2.getBalance());
+
       acct3.withdraw(-100.00, 1.50);  //invalid transaction
 
       acct1.addInterest();
